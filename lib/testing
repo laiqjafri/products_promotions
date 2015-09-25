@@ -1,0 +1,6 @@
+require File.join(__dir__, "checkout")
+item1 = Item.new '001', "Travel Card Holder", 9.25, [PromotionXPriceOnYItems.new(8.5, 2)]
+item2 = Item.new '002', "Personalised cufflinks", 45
+item3 = Item.new '003', "Kids T-shirt", 19.95
+
+c = Checkout.new [PromotionXPercentOffOnY.new(10, 60)]
